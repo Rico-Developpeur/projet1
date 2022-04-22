@@ -1,0 +1,63 @@
+*, html, body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }  
+
+
+.scintillant {
+    object-fit: cover;
+    height: 100vw;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0.85;
+ }
+ 
+ header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 400px;
+ }
+
+.presentation {
+     position: relative;
+     object-fit: cover;
+     width: 100vw;
+     max-height: 450px;
+}
+
+ .viewport-header {
+    position: relative;
+    height: 100vh;
+ }
+    
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    background-image: url("bandeau.png");
+    background-repeat : repeat-x;
+    padding: 30px 70px;
+    font-family : 'Quite Magical' , sans-serif ;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+li, a {
+    padding-top: 26px;
+    color: red;
+}
+
+.logo {
+    flex-grow: 3;
+}
+
+.accueil, .presta, .spect, .contact, .galerie {
+    flex-grow: 1;
+    text-align: center;
+}
+
