@@ -33,7 +33,7 @@
     position: relative;
     height: 100vh;
  }
-    
+
 
 ul {
     list-style-type: none;
@@ -44,12 +44,21 @@ ul {
     padding: 30px 70px;
     font-family : 'Quite Magical' , sans-serif ;
     font-size: 35px;
-    font-weight: bold;
+    border-top: 2px solid red;
+    
 }
 
 li, a {
     padding-top: 26px;
     color: red;
+}
+
+.carte {
+    height: 83px;
+    background-image: url("bandeau_reverse.png");
+    background-repeat: repeat-x;
+    border-bottom: 2px solid red;
+    margin-top: -50px;
 }
 
 .logo {
@@ -61,3 +70,15 @@ li, a {
     text-align: center;
 }
 
+@media  and (max-width: 780px) {
+    ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-raws: 50px 50px 50px;
+    }
+
+    .logo {
+        
+    }
+    
+}
