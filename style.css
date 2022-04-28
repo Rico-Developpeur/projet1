@@ -1,3 +1,4 @@
+/* Reset */
 *, html, body {
     box-sizing: border-box;
     margin: 0;
@@ -12,7 +13,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    opacity: 0.85;
+    opacity: 0.80;
  }
  
  header {
@@ -22,21 +23,24 @@
     max-height: 400px;
  }
 
+ /* Position premier plan */
 .presentation {
      position: relative;
      object-fit: cover;
      width: 100vw;
-     max-height: 450px;
+     height: 400px;
 }
 
-label, #hamburger {
-    display: none;
-}
 
+/* position premier plan container */
  .navigation {
     position: relative;
     height: 100vh;
  }
+
+ label, #hamburger {
+    display: none;
+}
 
 
 ul {
@@ -49,21 +53,22 @@ ul {
     font-family : 'Quite Magical' , sans-serif ;
     font-size: 35px;
     border-top: 2px solid red;
-    
+   
 }
 
 li, a {
     padding-top: 26px;
     color: red;
     text-decoration: none;
-
 }
 
+/* logo 3 fois la largeur */
 .logo {
     flex-grow: 3;
     margin-top: -10px;
 }
 
+/* image du logo */
 .imagix {
     width: 60px;
     height: 60px;
@@ -71,70 +76,152 @@ li, a {
     border: solid 3px black;
 }
 
+/* 1 fois la largeur chaque element */
 .accueil, .presta, .spect, .contact, .galerie {
     flex-grow: 1;
     text-align: center;
 }
 
+.intro {
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    margin-top: -350px;
+    margin-left: 200px;
+    margin-right: 200px;
+    line-height: 1.7;
+    font-weight: 500;
+}
+
+h1 {
+    position: relative;
+    text-align: center;
+    color: red;
+    margin-top: -400px;
+    margin-bottom: 100px;
+    font-size: 50px;
+}
+
 .grid_pc {
-    margin-top: -300px;
     position: relative;
     color: white;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 100px 100px 100px 100px;
+    grid-template-columns: repeat(2, 450px);
+    grid-template-rows: repeat(5, 340px);
     gap: 20px;
-    margin-left: 50px;
-    
+    margin: 100px auto;
+    justify-content: center;
 }
 
 .mariage, .scene {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
+    border: 3px solid red;
+    background: white;
+    color: black;
 }
 
-.mariage_img, .scenie_img {
+.mariage_img, .scene_img {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
+    border: 3px solid red;
 }
+
+.scene_img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scene1_img {
+    width: 447px;
+    height: 337px;
+}
+
+.mariage_img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mariage1_img {
+    width: 447px;
+    height: 337px;
+}
+
 
 .entreprise, .close {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
+    border: 3px solid red;
+    background: white;
+    color: black;
 }
 
 .entre_img, .close_img {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
+    border: 3px solid red;
 }
 
 .anniv, .mentalisme {
     grid-column: 1 / 2;
     grid-row: 3/4;
+    border: 3px solid red;
+    background: white;
+    color: black;
 }
 
 .anniv_img, .ment_img {
     grid-column: 2 / 3;
     grid-row: 3 / 4;
+    border: 3px solid red;
 }
 
-.asso, .carto {
+.asso, .salon {
     grid-column: 2 / 3;
     grid-row: 4 / 5;
+    border: 3px solid red;
+    background: white;
+    color: black;
 }
 
-.asso_img, .carto_img {
+.asso_img, .salon_img {
     grid-column: 1 / 2;
     grid-row: 4 / 5;
+    border: 3px solid red;
 }
 
-@media screen and (max-width: 780px) {
+.digitale {
+    grid-column: 1 / 2;
+    grid-row: 5 / 6;
+    border: 3px solid red;
+    background: white;
+    color: black;
+}
+
+.digitale_img {
+    grid-column: 2 / 3;
+    grid-row: 5 / 6;
+    border: 3px solid red;
+}
+
+@media screen and (max-width: 800px) {
+    /* Reset */
     *, html, body, ul, nav, li, a {
         box-sizing: border-box;
         margin: 0;
         padding: 0;
       }  
 
+      /* position premier plan container */
+    .navigation {
+        border-top: 3px solid red;
+        position: relative;
+        z-index: 5;
+    }
+    
+      /* enleve 3 fois la largeur */
     .logo {
         flex-grow: none;
         display: flex;
@@ -142,20 +229,23 @@ li, a {
         justify-content: center;
     }
 
+     /* rendre visible ou pas display: none */
     ul {
+        margin-top: -46px;
         display: block;
         background-image: none;
-        border-top: none;
+        border: none;
+        display: none;
+        background-color: gray;
     }
+
 
     li {
-        display: block;
         width: 100%;
-        box-sizing: border-box;
         margin: 10px;
-
     }
 
+    /* bouton burger */
     label {
         display: inline-block;
         color: #fff;
@@ -165,14 +255,23 @@ li, a {
         padding: 10px;
     }
 
-    ul {
-        display: none;
-    }
-
+    /* montrer et cacher le menu navigation */
     .navigation input:checked ~ ul {
         display: block;
     }
 
+    .intro {
+        position: absolute;
+        color: white;
+        font-size: 18px;
+        margin-top: -350px;
+        margin-left: 50px;
+        margin-right: 50px;
+        line-height: 1.6;
+        font-weight: 300;
+    }
+
+    /* mis en deuxieme plan afin de voir le menu burger */
     .flex_tel {
         position: relative;
         color: white;
@@ -181,8 +280,8 @@ li, a {
         justify-content: space-between;
         align-items: center;
         justify-content: center;
-        margin-top: -300px;
         gap: 20px;
+        z-index: 4;
     }
 
 }
