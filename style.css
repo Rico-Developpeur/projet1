@@ -1,42 +1,43 @@
+
 /* Reset */
 *, html, body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-  }  
+}  
 
 
 .scintillant {
     object-fit: cover;
-    height: 100vw;
+    height: 100vh;
     width: 100vw;
     position: fixed;
     top: 0;
     left: 0;
- }
- 
- header {
+}
+
+header {
     display: flex;
     align-items: center;
     justify-content: center;
     max-height: 400px;
- }
+}
 
- /* Position premier plan */
+/* Position premier plan */
 .presentation {
-     position: relative;
-     object-fit: fill;
-     width: 100vw;
-     height: 400px;
+    position: relative;
+    object-fit: fill;
+    width: 100vw;
+    height: 400px;
 }
 
 
 /* position premier plan container */
- .navigation {
+.navigation {
     position: relative;
- }
+}
 
- label, #hamburger {
+label, #hamburger {
     display: none;
 }
 
@@ -101,7 +102,7 @@ li, a {
     margin: 160px 200px;
     line-height: 1.2;
     font-weight: 500;
-    padding-top: 50px;
+    padding-top: 60px;
     text-indent: 70px;
 }
 
@@ -142,7 +143,7 @@ h1 {
     grid-row: 1 / 2;
     border: 3px solid red;
     border-radius: 15px;
-    
+
 }
 
 .scene_img {
@@ -251,13 +252,30 @@ h1 {
     border-radius: 15px;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (min-width: 1600px) {
+
+    .parchemin {
+        width: 100vw;
+        height: 950px;
+        margin: 50px 0px;
+    }
+    
+    .olivier {
+        font-size: 30px;
+        margin: 160px 300px;
+        line-height: 1.2;
+        padding-top: 70px;
+        text-indent: 70px;
+    }
+}
+
+@media screen and (max-width: 1144px) {
     /* Reset */
     *, html, body, ul, nav, li, a {
         box-sizing: border-box;
         margin: 0;
         padding: 0;
-      }  
+    }  
 
       /* position premier plan container */
     .navigation {
@@ -315,7 +333,6 @@ h1 {
         font-size: 22px;
         margin: 0px 150px;
         padding-top: 210px;
-        padding-bottom: 0px;
         text-indent: 50px;
         line-height: 1.2;
     }
@@ -336,32 +353,60 @@ h1 {
 
 }
 
-@media screen and (max-width: 450px) {
-    /* Reset */
-    *, html, body, ul, nav, li, a {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-      }  
+@media screen and (max-width: 732px) {
 
-      .intro {
+
+
+    .parchemin {
+        width: 100vw;
+        height: 700px;
+        margin: 0;
+    }
+    .olivier {
+        font-size: 16px;
+        margin: 0px 80px;
+        padding-top: 110px;
+        text-indent: 30px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+    .parchemin {
+        width: 100vw;
+        height: 730px;
+        margin: 0;
+    }
+    .olivier {
+        font-size: 15px;
+        margin: 0px 70px;
+        padding-top: 120px;
+        text-indent: 30px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+
+
+    .intro {
         background-size: 370px 500px;
         font-weight: 300;
     }
 
     .parchemin {
         width: 100vw;
-        height: 650px;
+        height: 800px;
         margin: 0;
     }
     .olivier {
         font-size: 15px;
-        margin: 0px 180px;
-        margin-left: 70px;
-        margin-right: 70px;
-        padding-top: 170px;
-        text-indent: 30px;
+        margin: 0px 60px;
+        padding-top: 130px;
+        text-indent: 20px;
     }
 
+  
 }
+
+
 
