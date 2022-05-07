@@ -63,6 +63,18 @@ li, a {
     text-decoration: none;
 }
 
+/* transition du menu */
+li {
+    transition-property: transform;
+    transition-duration: 600ms;
+}
+
+li:hover {
+    transform: scale(1.30);
+}
+
+
+
 /* logo 3 fois la largeur */
 .logo {
     flex-grow: 3;
@@ -122,7 +134,7 @@ h1 {
     grid-template-columns: repeat(2, 450px);
     grid-template-rows: repeat(5, 340px);
     gap: 30px;
-    margin: 0px auto;
+    margin: 100px auto;
     justify-content: center;
     text-align: center;
 }
@@ -146,32 +158,6 @@ h1 {
 
 }
 
-.scene_img {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.scene1_img {
-    width: 447px;
-    height: 337px;
-    border-radius: 15px;
-}
-
-.mariage_img {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-
-.mariage1_img {
-    width: 447px;
-    height: 337px;
-    border-radius: 15px;
-}
-
-
 .entreprise, .mentalisme {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
@@ -186,18 +172,6 @@ h1 {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
     border: 3px solid red;
-    border-radius: 15px;
-}
-
-.mentalisme_img {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.mentalisme1_img {
-    width: 447px;
-    height: 337px;
     border-radius: 15px;
 }
 
@@ -251,6 +225,40 @@ h1 {
     border: 3px solid red;
     border-radius: 15px;
 }
+
+.mentalisme_img, .close_img, .salon_img, .scene_img, .digitale_img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: roll 5s;
+    transform: rotate(360deg);
+}
+
+.scene1_img, .mariage1_img, .mentalisme1_img {
+    width: 447px;
+    height: 337px;
+    border-radius: 15px;
+}
+
+.mariage_img, .entre_img, .anniv_img, .asso_img, .retraite_img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: roll 5s;
+    transform: rotate(360deg);
+}
+
+/* Rotation image  */
+@keyframes roll {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+
 
 @media screen and (min-width: 1600px) {
 
@@ -308,6 +316,19 @@ h1 {
         margin: 10px;
     }
 
+    /* Plus de transition pour le logo */
+    .logo {
+        transition-property: none;
+        transition-duration: none;
+    }
+    
+    .logo:hover {
+        transform: none;
+    }
+    
+
+  
+
     /* bouton burger */
     label {
         display: inline-block;
@@ -321,7 +342,22 @@ h1 {
     /* montrer et cacher le menu navigation */
     .navigation input:checked ~ ul {
         display: block;
+        animation-duration: 2.5s;
+        animation-name: glissement;
+        animation-direction: normal;
     }
+
+    @keyframes glissement {
+        from {
+          margin-left: 100%;
+          width: 100%;
+        }
+      
+        to {
+          margin-left: 0%;
+          width: 100%;
+        }
+      }
 
     .parchemin {
         width: 100vw;
@@ -338,7 +374,7 @@ h1 {
     }
 
 
-    /* mis en deuxieme plan afin de voir le menu burger */
+    /* deuxieme plan afin de voir le menu burger */
     .flex_tel {
         position: relative;
         color: white;
@@ -354,7 +390,13 @@ h1 {
 }
 
 @media screen and (max-width: 732px) {
+    h1 {
+        margin-top: 50px;
+    }
 
+    .flex_tel {
+        margin-top: -10px;
+    }
 
 
     .parchemin {
@@ -368,6 +410,28 @@ h1 {
         padding-top: 110px;
         text-indent: 30px;
     }
+}
+
+
+@media screen and (max-width: 500px) {
+    .presentation {
+        height: 300px;
+    }
+
+    .flex_tel {
+        margin-top: -20px;
+    }
+    
+    .mariage_img, .mentalisme_img, .scene_img {
+        width: 310px;
+        height: 206px;
+    }
+    
+    .mariage1_img, .mentalisme1_img, .scene1_img {
+        width: 308px;
+        height: 203px;
+    }
+
 }
 
 @media screen and (max-width: 450px) {
@@ -385,8 +449,19 @@ h1 {
     }
 }
 
-@media screen and (max-width: 360px) {
 
+@media screen and (max-width: 360px) {
+    .presentation {
+        height: 200px;
+    }
+
+    .flex_tel {
+        margin-top: -40px;
+    }
+
+    h1 {
+        margin-top: 20px;
+    }
 
     .intro {
         background-size: 370px 500px;
