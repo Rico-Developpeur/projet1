@@ -258,6 +258,44 @@ h1 {
     }
   }
 
+/* formulaire */
+
+form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    color: white;
+    margin: 50px auto;
+    width: 800px;
+    padding: 20px;
+    border: 2px solid red;
+    border-radius: 15px;
+}
+
+.form_label {
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+}
+
+.form_input, textarea {
+    font: 20px sans-serif;
+    width: 300px;
+    box-sizing: border-box;
+    border: 3px solid #999;
+}
+
+.form_input {
+    height: 30px;
+}
+
+textarea {
+    vertical-align: top;
+    height: 100px;
+}
 
 
 @media screen and (min-width: 1600px) {
@@ -330,7 +368,7 @@ h1 {
   
 
     /* bouton burger */
-    label {
+    .burger {
         display: inline-block;
         color: #fff;
         background: #8a0000;
@@ -340,9 +378,9 @@ h1 {
     }
 
     /* montrer et cacher le menu navigation */
-    .navigation input:checked ~ ul {
+    .navigation .burger2:checked ~ ul {
         display: block;
-        animation-duration: 2.5s;
+        animation-duration: 2s;
         animation-name: glissement;
         animation-direction: normal;
     }
@@ -387,6 +425,14 @@ h1 {
         z-index: 4;
     }
 
+    form {
+        width: 700px;
+    }
+
+    .form_label {
+        width: 60px;
+    }
+
 }
 
 @media screen and (max-width: 732px) {
@@ -410,6 +456,21 @@ h1 {
         padding-top: 110px;
         text-indent: 30px;
     }
+
+   
+    form {
+        margin-top: -50px;
+        width: 500px;
+    }
+
+    .form_label {
+        width: 65px;
+    }
+
+    .form_input, textarea {
+        font: 17px sans-serif;
+    }
+
 }
 
 
@@ -432,6 +493,10 @@ h1 {
         height: 203px;
     }
 
+    form {
+        width: 430px;
+    }
+
 }
 
 @media screen and (max-width: 450px) {
@@ -447,6 +512,23 @@ h1 {
         padding-top: 120px;
         text-indent: 30px;
     }
+
+    form {
+        width: 360px;
+    }
+
+    .form_label {
+        width: 65px;
+    }
+
+    .form_label2 {
+        width: 42px;
+    }
+
+    .form_label3 {
+        width: 50px;
+    }
+
 }
 
 
@@ -480,7 +562,22 @@ h1 {
         text-indent: 20px;
     }
 
-  
+    form {
+        width: 315px;
+    }
+
+    .form_label {
+        width: 65px;
+    }
+
+    .form_label2 {
+        width: 42px;
+    }
+
+    .form_label3 {
+        width: 50px;
+    }
+
 }
 
 

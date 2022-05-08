@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href = " http://fonts.cdnfonts.com/css/quite-magical " rel = "stylesheet" >
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Contact Imagix magicien à Nantes</title>
 </head>
 <body>
     <video class="scintillant" src="scintillant.mp4" type="video/mp4" playsinline autoplay muted loop></video>
@@ -17,8 +17,8 @@
 
     <nav class="navigation">
         <!-- bouton burger lié avec for et id -->
-        <label for="hamburger">&#9776;</label>
-        <input type="checkbox" id="hamburger"/>    
+        <label class="burger" for="hamburger">&#9776;</label>
+        <input class="burger2" type="checkbox" id="hamburger"/>    
         <ul>
             <li class="logo"><a href="projet1.html"><img class="imagix" src="imagix_logo.png" alt="logo"></a></li>
             <li class="accueil"><a href="projet1.html">Accueil</a></li>
@@ -30,6 +30,24 @@
     </nav>
 
     <h1>Contact</h1>
+
+    <form action="">
+        <div>
+            <label class="form_label form_label2" for="name">Nom :</label>
+            <input class="form_input" type="text" id="name" name="user_name">
+        </div>
+        <div>
+            <label class="form_label form_label3" for="mail">e-mail&nbsp;:</label>
+            <input class="form_input" type="email" id="mail" name="user_mail">
+        </div>
+        <div>
+            <label class="form_label" for="msg">Message :</label>
+            <textarea id="msg" name="user_message"></textarea>
+        </div>
+        <div class="button">
+            <button type="submit">Envoyer le message</button>
+        </div>
+    </form>
     
 </body>
 </html>
