@@ -136,8 +136,22 @@ h1 {
     gap: 30px;
     margin: 100px auto;
     justify-content: center;
-    text-align: center;
 }
+
+h2 {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    font-size: 30px;
+}
+
+.grid {
+    font-size: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+
 
 .mariage, .close {
     grid-column: 1 / 2;
@@ -168,7 +182,7 @@ h1 {
     box-shadow: 12px 12px 2px 1px rgba(255, 0, 0, 0.4);
 }
 
-.entre_img, .mentalisme_img {
+.entreprise_img, .mentalisme_img {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
     border: 3px solid red;
@@ -234,13 +248,18 @@ h1 {
     transform: rotate(360deg);
 }
 
-.scene1_img, .mariage1_img, .mentalisme1_img {
+.mariage1_img, .close1_img, .mentalisme1_img, .salon1_img, .scene1_img, .digitale1_img, .entreprise1_img, .anniv1_img, .asso1_img, .retraite1_img {
     width: 447px;
     height: 337px;
     border-radius: 15px;
 }
 
-.mariage_img, .entre_img, .anniv_img, .asso_img, .retraite_img {
+.close, .close_img, .mariage_img, .mariage, .mentalisme, .mentalisme_img, .salon, .salon_img, .scene, .scene_img, .digitale, .digitale_img, .entreprise, .entreprise_img, .anniv, .anniv_img, .asso, .asso_img, .retraite, .retraite_img {
+    width: 450px;
+    height: 340px;
+}
+
+.mariage_img, .entreprise_img, .anniv_img, .asso_img, .retraite_img {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -483,12 +502,12 @@ textarea {
         margin-top: -20px;
     }
     
-    .mariage_img, .mentalisme_img, .scene_img {
+    .close, .close_img, .mariage_img, .mariage, .mentalisme, .mentalisme_img, .salon, .salon_img, .scene, .scene_img, .digitale, .digitale_img, .entreprise, .entreprise_img, .anniv, .anniv_img, .asso, .asso_img, .retraite, .retraite_img {
         width: 310px;
         height: 206px;
     }
     
-    .mariage1_img, .mentalisme1_img, .scene1_img {
+    .mariage1_img, .close1_img, .mentalisme1_img, .salon1_img, .scene1_img, .digitale1_img, .entreprise1_img, .anniv1_img, .asso1_img, .retraite1_img {
         width: 308px;
         height: 203px;
     }
@@ -496,6 +515,29 @@ textarea {
     form {
         width: 430px;
     }
+
+    h2 {
+        margin-bottom: 5px;
+    }
+
+    .grid {
+        font-size: 15px;
+        margin-right: 10px;
+        margin-left: 20px;
+        margin-bottom: 0px;
+    }
+
+    h2 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .grid {
+        font-size: 15px;
+        margin-right: 10px;
+        margin-left: 20px;
+    } 
+
 
 }
 
@@ -577,7 +619,6 @@ textarea {
     .form_label3 {
         width: 50px;
     }
-
 }
 
 
