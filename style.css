@@ -46,7 +46,7 @@ ul {
     list-style-type: none;
     display: flex;
     justify-content: space-between;
-    background-image: url("bandeau.png");
+    background-image: url("images/bandeau.png");
     background-repeat : repeat-x;
     padding: 0px 70px;
     border-top: 2px solid red;
@@ -315,6 +315,10 @@ textarea {
     vertical-align: top;
     height: 100px;
 }
+
+
+
+
 
 
 @media screen and (min-width: 1600px) {
