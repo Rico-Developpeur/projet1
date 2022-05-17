@@ -29,6 +29,14 @@ header {
     height: 400px;
 }
 
+.presentation_contact {
+    position: relative;
+    object-fit: fill;
+    width: 100vw;
+    height: 400px;
+    margin-top: -44px;
+}
+
 /* position premier plan container */
 .navigation {
     position: relative;
@@ -245,8 +253,6 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    /** animation: roll 5s;
-    transform: rotate(360deg);*/
 } 
 
 .mariage1_img, .close1_img, .mentalisme1_img, .salon1_img, .scene1_img, .digitale1_img, .entreprise1_img, .anniv1_img, .asso1_img, .retraite1_img {
@@ -264,20 +270,7 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* animation: roll 5s;
-    transform: rotate(360deg); */
 }
-
-/* Rotation image  */
-/* @keyframes roll {
-    0% {
-      transform: rotate(0);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-} */
-
 
 .rotation {
     opacity: 0;
@@ -333,6 +326,12 @@ form {
 .form_label {
     display: inline-block;
     width: 100px;
+    text-align: right;
+}
+
+.form_label2 {
+    display: inline-block;
+    width: 103px;
     text-align: right;
 }
 
@@ -438,7 +437,7 @@ span {
     transform: rotateY(280deg) translateZ(430px); 
 }
 .carousel__face:nth-child(9) {
-    background-image: url("https://images.pexels.com/photos/1175135/pexels-photo-1175135.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    background-image: url("./images/digitale.jpg");
     transform: rotateY(320deg) translateZ(430px); 
 }
   
@@ -603,16 +602,26 @@ span {
         width: 700px;
     }
 
-    .form_label {
-        width: 65px;
+    .form_label2 {
+        width: 103px;
+        margin-left: -25px;
     }
 
     .form_label5 {
         width: 76px;
+        margin-left: -2px;
+    }
+
+    .form_label3 {
+        margin-left: -23px;
     }
 
     .form_label4 {
-        margin-left: -5px;
+        margin-left: -13px;
+    }
+
+    .form_label6 {
+        margin-left: -27px;
     }
     
     .button2 {
@@ -672,8 +681,8 @@ span {
         width: 500px;
     }
 
-    .form_label {
-        width: 80px;
+    .form_label3 {
+        margin-left: -25px;
     }
 
     .form_input, textarea {
@@ -730,6 +739,14 @@ span {
     form {
         width: 430px;
         margin-top: -40px;
+    }
+
+    .form_label2 {
+        width: 107px;
+    }
+
+    .form_label5 {
+        margin-left: 5px;
     }
 
     .reveal {
@@ -791,16 +808,12 @@ span {
         margin-top: -50px;
     }
 
-    .form_label {
-        width: 65px;
-    }
-
     .form_label2 {
-        width: 42px;
+        width: 130px;
     }
 
     .form_label3 {
-        width: 50px;
+        width: 76px;
     }
 
     .form_label5 {
@@ -808,7 +821,11 @@ span {
     }
 
     .form_label4 {
-        width: 200px;
+        width: 205px;
+    }
+
+    .form_label6 {
+        width: 90px;
     }
     
     .button2 {
@@ -893,11 +910,11 @@ span {
     }
 
     .form_label2 {
-        width: 42px;
+        width: 130px;
     }
 
     .form_label3 {
-        width: 50px;
+        width: 77px;
     }
 
     .form_label5 {
@@ -906,6 +923,10 @@ span {
 
     .form_label4 {
         margin-right: 15px;
+    }
+
+    .form_label6 {
+        margin-left: 0px;
     }
 
     .carousel__face { 
