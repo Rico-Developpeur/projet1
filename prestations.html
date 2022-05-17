@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="images/imagix_logo.png">
-    <link href = " http://fonts.cdnfonts.com/css/quite-magical " rel = "stylesheet" >
+    <link href = "http://fonts.cdnfonts.com/css/quite-magical " rel = "stylesheet" >
     <link rel="stylesheet" href="style.css">
     <title>Prestations Imagix magicien à Nantes</title>
 </head>
 <body>
-    <video class="scintillant" src="videos/scintillant.mp4" type="video/mp4" playsinline autoplay muted loop></video>
+    <video class="scintillant" src="./videos/scintillant.mp4" type="video/mp4" playsinline autoplay muted loop></video>
 
     <header>
-        <video class="presentation" src="videos/billet.mp4" type="video/mp4" playsinline autoplay muted loop></video>
+        <video class="presentation" src="./videos/voiture.mp4" type="video/mp4" playsinline autoplay muted loop></video>
     </header>
     
     <nav class="navigation">
@@ -24,48 +24,64 @@
             <li class="logo"><a href="projet1.html"><img class="imagix" src="images/imagix_logo.png" alt="logo"></a></li>
             <li class="accueil"><a href="projet1.html">Accueil</a></li>
             <li class="presta"><a href="prestations.html">Prestations</a></li>
-            <li class="spect"><a href="spectacles.html">Spectacles</a></li>
+            <li class="spect"><a href="animations.html">Animations</a></li>
             <li class="contact"><a href="contact.html">Contact</a></li>
             <li class="galerie"><a href="galerie.html">Galerie</a></li>
         </ul>
     </nav>
 
-    <h1>Prestations</h1>
+    <h1 class="titre">Prestations</h1>
 
 
     <div class="grid_pc flex_tel">
         
         <div class="mariage">
             <h2>Mariages</h2>
-            <p></p>
+            <p class="grid">Apportez une touche magique supplémentaire à cette journée très singulière. <br><br>
+                Agrémentez le vin d'honneur, le repas ou tout autre moment, avec une intervention de type stand-up, table à table,
+                ou encore au format stand / atelier.
+            </p>
         </div>
-        <div class="mariage_img"><img class="mariage1_img" src="images/mariage.jpg" alt="mariage_magie"></div>
+        <div class="mariage_img rotation"><img class="mariage1_img" src="images/mariage.jpg" alt="mariage_magie"></div>
  
         <div class="entreprise">
             <h2>Entreprises</h2>
-            <p></p>
+            <p class="grid">Pour tous types d'occasions, intégrez une touche magique à vos événements (séminaires, congrès,
+                soirées privées, conventions, salons, repas de fin d'année, etc...).
+            </p>
         </div>
-        <div class="entreprise_img"><img class="entreprise1_img" src="images/entreprise.jpg" alt="entreprise_magie"></div>
+        <div class="entreprise_img rotation"><img class="entreprise1_img" src="images/entreprise.jpg" alt="entreprise_magie"></div>
         
         <div class="anniv">
             <h2>Anniversaires</h2>
-            <p></p>
+            <p class="grid">L'art magique s'intègre parfaitement pour ce genre de fêtes, et ce, quel que soit votre âge ! <br><br>
+                La personne au centre de cet événement est mise en avant. <br>
+                Des tours "sur-mesure" seront présentés selon ses goûts personnels.
+            </p>
         </div>
-        <div class="anniv_img"><img class="anniv1_img" src="" alt=""></div>
+        <div class="anniv_img rotation"><img class="anniv1_img" src="" alt=""></div>
         
         <div class="asso">
             <h2>Association</h2>
-            <p></p>
+            <p class="grid">Pour agrémenter l'organisation de vos différentes manifestations, optez pour la formule de votre choix
+                (petite scène, format stand / atelier, table à table). <br><br>
+                Tout est adaptable selon vos besoins !
+            </p>
         </div>
-        <div class="asso_img"><img class="asso1_img" src="images/asso.JPG" alt=""></div>
+        <div class="asso_img rotation"><img class="asso1_img" src="images/asso.JPG" alt=""></div>
 
         <div class="retraite">
             <h2>Maison de retraite</h2>
-            <p></p>
+            <p class="grid">Un divertissement original garanti avec des effets magiques qui parlent aux résidents et qui sont, pour certains,
+                basés sur des jeux de société (ex: Loto, Scrabble, Rubik's cubes, Echecs, etc...). <br><br>
+                Alors, à vous de jouer !
+            </p>
         </div>
-        <div class="retraite_img"><img class="retraite1_img" src="images/maison_retraite.JPG" alt="magie_maison_de_retraite"></div>
+        <div class="retraite_img rotation"><img class="retraite1_img" src="images/maison_retraite.JPG" alt="magie_maison_de_retraite"></div>
         
     </div>
+
+    <script src="prestations.js"></script>
     
 </body>
 </html>
