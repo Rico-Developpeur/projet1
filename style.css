@@ -163,7 +163,7 @@ h2 {
 }
 
 .grid {
-    font-size: 24px;
+    font-size: 23px;
     margin-right: 20px;
     margin-left: 20px;
     font-family : 'Quite Magical' , sans-serif ;
@@ -538,7 +538,7 @@ span {
     /* montrer et cacher le menu navigation */
     .navigation .burger2:checked ~ ul {
         display: block;
-        animation-duration: 2s;
+        animation-duration: 1s;
         animation-name: glissement;
         animation-direction: normal;
     }
@@ -649,11 +649,6 @@ span {
         margin-top: -110px;
     }
 
-    .container {
-        width: 100vw;
-    }
-
-
     form {
         margin-top: -30px;
         width: 500px;
@@ -698,7 +693,7 @@ span {
     }
 
     .grid {
-        font-size: 15px;
+        font-size: 13px;
         margin-right: 10px;
         margin-left: 20px;
     }
