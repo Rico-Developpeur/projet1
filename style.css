@@ -364,6 +364,10 @@ textarea {
     width: 150px;
 }
 
+.body_galerie {
+    width: 100vw;
+}
+
 /* carrousel */
 
 .container {
