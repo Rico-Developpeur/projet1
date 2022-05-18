@@ -328,16 +328,14 @@ form {
     border-radius: 15px;
 }
 
-.form_label {
-    display: inline-block;
-    width: 100px;
-    text-align: right;
+.contact_flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.form_label2 {
-    display: inline-block;
-    width: 103px;
-    text-align: right;
+.form_label {
+    display: flex;
 }
 
 .form_input, textarea {
@@ -359,13 +357,6 @@ textarea {
 .button {
     display: flex;
     align-items: center;
-}
-
-.form_label4 {
-    display: inline-block;
-    text-align: right;
-    width: 250px;
-    margin-right: 5px;
 }
 
 .button2 {
@@ -606,28 +597,6 @@ span {
     form {
         width: 700px;
     }
-
-    .form_label2 {
-        width: 103px;
-        margin-left: -25px;
-    }
-
-    .form_label5 {
-        width: 76px;
-        margin-left: -2px;
-    }
-
-    .form_label3 {
-        margin-left: -23px;
-    }
-
-    .form_label4 {
-        margin-left: -13px;
-    }
-
-    .form_label6 {
-        margin-left: -27px;
-    }
     
     .button2 {
         width: 130px;
@@ -686,10 +655,6 @@ span {
         width: 500px;
     }
 
-    .form_label3 {
-        margin-left: -25px;
-    }
-
     .form_input, textarea {
         font: 17px sans-serif;
     }
@@ -699,6 +664,11 @@ span {
 @media screen and (max-width: 500px) {
     .presentation {
         height: 300px;
+    }
+
+    .presentation_contact2 {
+        height: 345px;
+
     }
 
     .teaser {
@@ -744,14 +714,6 @@ span {
     form {
         width: 430px;
         margin-top: -40px;
-    }
-
-    .form_label2 {
-        width: 107px;
-    }
-
-    .form_label5 {
-        margin-left: 5px;
     }
 
     .reveal {
@@ -813,26 +775,6 @@ span {
         margin-top: -50px;
     }
 
-    .form_label2 {
-        width: 150px;
-    }
-
-    .form_label3 {
-        width: 85px;
-    }
-
-    .form_label5 {
-        width: 85px;
-    }
-
-    .form_label4 {
-        width: 205px;
-    }
-
-    .form_label6 {
-        width: 100px;
-    }
-    
     .button2 {
         width: 80px;
     }
@@ -908,30 +850,6 @@ span {
     
     form {
         width: 315px;
-    }
-
-    .form_label {
-        width: 65px;
-    }
-
-    .form_label2 {
-        width: 130px;
-    }
-
-    .form_label3 {
-        width: 77px;
-    }
-
-    .form_label5 {
-        width: 76px;
-    }
-
-    .form_label4 {
-        margin-right: 15px;
-    }
-
-    .form_label6 {
-        margin-left: 0px;
     }
 
     .carousel__face { 
