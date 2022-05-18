@@ -364,10 +364,6 @@ textarea {
     width: 150px;
 }
 
-.body_galerie {
-    width: 100vw;
-}
-
 /* carrousel */
 
 .container {
@@ -651,6 +647,10 @@ span {
     .contact_p {
         font-size: 25px;
         margin-top: -110px;
+    }
+
+    .container {
+        width: 100vw;
     }
 
 
