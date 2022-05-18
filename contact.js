@@ -1,8 +1,8 @@
 const img = document.createElement("img");
-img.src = "images/courrier.gif";
+img.src = "./images/courrier.gif";
 img.style.width = "200px";
 
-const affiche2 = document.querySelector("#contactForm")
+const affiche2 = document.querySelector("#contactForm");
 
 const affiche = document.querySelector(".button3");
 
