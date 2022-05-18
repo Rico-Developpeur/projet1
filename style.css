@@ -668,7 +668,6 @@ span {
 
     .presentation_contact2 {
         height: 345px;
-
     }
 
     .teaser {
@@ -803,6 +802,10 @@ span {
 @media screen and (max-width: 360px) {
     .presentation {
         height: 200px;
+    }
+
+    .presentation_contact2 {
+        height: 245px;
     }
 
     .teaser {
