@@ -561,14 +561,17 @@ span {
 
     .parchemin {
         width: 100vw;
-        height: 900px;
+        height: 950px;
         margin-bottom: 50px;
         margin-top: 0px;
     }
 
     .olivier {
         font-size: 22px;
-        margin: 0px 150px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-right: 120px;
+        margin-left: 140px;
         padding-top: 160px;
         text-indent: 50px;
         line-height: 1.2;
@@ -631,13 +634,16 @@ span {
 
     .parchemin {
         width: 100vw;
-        height: 660px;
+        height: 700px;
         margin: 0;
     }
 
     .olivier {
         font-size: 16px;
-        margin: 0px 120px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-right: 95px;
+        margin-left: 115px;
         padding-top: 120px;
         text-indent: 30px;
     }
@@ -664,8 +670,11 @@ span {
 
     .olivier {
         font-size: 16px;
-        margin: 0px 100px;
-        padding-top: 110px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-right: 80px;
+        margin-left: 95px;
+        padding-top: 115px;
         text-indent: 30px;
     }
 }
@@ -685,13 +694,16 @@ span {
     }
 
     .parchemin {
-        height: 770px;
+        height: 790px;
     }
 
     .olivier {
         font-size: 16px;
-        margin: 0px 90px;
-        padding-top: 110px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-right: 75px;
+        margin-left: 90px;
+        padding-top: 120px;
         text-indent: 30px;
     }
 
@@ -760,13 +772,16 @@ span {
 @media screen and (max-width: 450px) {
 
     .parchemin {
-        height: 850px;
+        height: 860px;
     }
 
     .olivier {
         font-size: 16px;
-        margin: 0px 70px;
-        padding-top: 120px;
+        margin-right: 60px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: 70px;
+        padding-top: 130px;
         text-indent: 30px;
     }
 
@@ -840,13 +855,16 @@ span {
     }
 
     .parchemin {
-        height: 900px;
+        height: 880px;
     }
 
     .olivier {
         font-size: 16px;
-        margin: 0px 60px;
-        padding-top: 130px;
+        margin-right: 50px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: 55px;
+        padding-top: 140px;
     }
 
     .contact_p {
@@ -878,6 +896,13 @@ span {
         height: 150px;
         margin-top: 400px;
         margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 330px) {
+
+    .parchemin {
+        height: 950px;
     }
 }
 
