@@ -639,8 +639,8 @@ span {
 
     .olivier {
         font-size: 16px;
-        margin: 0px 80px;
-        padding-top: 110px;
+        margin: 0px 120px;
+        padding-top: 120px;
         text-indent: 30px;
     }
 
@@ -659,6 +659,18 @@ span {
     }
 
 }
+@media screen and (max-width: 600px) {
+    .parchemin {
+        height: 690px;
+    }
+
+    .olivier {
+        font-size: 16px;
+        margin: 0px 100px;
+        padding-top: 110px;
+        text-indent: 30px;
+    }
+}
 
 @media screen and (max-width: 500px) {
     .presentation {
@@ -675,7 +687,14 @@ span {
     }
 
     .parchemin {
-        height: 680px;
+        height: 730px;
+    }
+
+    .olivier {
+        font-size: 16px;
+        margin: 0px 90px;
+        padding-top: 110px;
+        text-indent: 30px;
     }
 
     .flex_tel {
@@ -693,7 +712,7 @@ span {
     }
 
     .grid {
-        font-size: 13px;
+        font-size: 15px;
         margin-right: 10px;
         margin-left: 20px;
     }
@@ -743,13 +762,11 @@ span {
 @media screen and (max-width: 450px) {
 
     .parchemin {
-        width: 100vw;
-        height: 730px;
-        margin: 0;
+        height: 820px;
     }
 
     .olivier {
-        font-size: 15px;
+        font-size: 16px;
         margin: 0px 70px;
         padding-top: 120px;
         text-indent: 30px;
@@ -798,7 +815,7 @@ span {
 
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 365px) {
     .presentation {
         height: 200px;
     }
@@ -806,6 +823,19 @@ span {
     .presentation_contact2 {
         height: 245px;
     }
+
+    .parchemin {
+        height: 820px;
+    }
+
+    .olivier {
+        font-size: 16px;
+        margin: 0px 70px;
+        padding-top: 120px;
+        text-indent: 30px;
+    }
+
+   
 
     .teaser {
         font-size: 18px;
