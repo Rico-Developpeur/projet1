@@ -81,7 +81,6 @@ li:hover {
     transform: scale(1.30);
 }
 
-/* logo 3 fois la largeur */
 .logo {
     margin-top: -10px;
 }
@@ -94,7 +93,7 @@ li:hover {
     border: solid 3px black;
 }
 
-/* 1 fois la largeur chaque element */
+
 .accueil, .presta, .spect, .contact, .galerie {
     text-align: center;
 }
@@ -129,6 +128,13 @@ li:hover {
     font-weight: 500;
     padding-top: 60px;
     text-indent: 70px;
+}
+
+.olivier2 {
+    margin-left: 700px;
+    font-size: 27px;
+    line-height: 1.2;
+    font-weight: 500;
 }
 
 .titre {
@@ -473,6 +479,13 @@ span {
         padding-top: 0px;
         text-indent: 70px;
     }
+
+    .olivier2 {
+        margin-left: 1000px;
+        font-size: 30px;
+        line-height: 1.2;
+    }
+    
 }
 
 @media screen and (max-width: 1144px) {
@@ -492,7 +505,6 @@ span {
     
       /* enleve 3 fois la largeur */
     .logo {
-        flex-grow: none;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -516,7 +528,6 @@ span {
     /* Plus de transition pour le logo */
     .logo {
         transition-property: none;
-        transition-duration: none;
     }
     
     .logo:hover {
@@ -577,6 +588,11 @@ span {
         line-height: 1.2;
     }
 
+    .olivier2 {
+        margin-left: 600px;
+        font-size: 22px;
+        line-height: 1.2;
+    }
 
     /* deuxieme plan afin de voir le menu burger */
     .flex_tel {
@@ -618,6 +634,12 @@ span {
   
 }
 
+@media screen and (max-width: 900px) {
+    .olivier2 {
+        margin-left: 430px;
+    }  
+}
+
 @media screen and (max-width: 732px) {
     .titre {
         margin-top: 50px;
@@ -646,6 +668,11 @@ span {
         margin-left: 115px;
         padding-top: 120px;
         text-indent: 30px;
+    }
+
+    .olivier2 {
+        margin-left: 350px;
+        font-size: 16px;
     }
 
     .contact_p {
@@ -677,6 +704,11 @@ span {
         padding-top: 115px;
         text-indent: 30px;
     }
+
+    .olivier2 {
+        margin-left: 280px;
+        font-size: 16px;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -703,8 +735,12 @@ span {
         margin-bottom: 0px;
         margin-right: 75px;
         margin-left: 90px;
-        padding-top: 120px;
+        padding-top: 130px;
         text-indent: 30px;
+    }
+
+    .olivier2 {
+        margin-left: 240px;
     }
 
     .flex_tel {
@@ -781,8 +817,12 @@ span {
         margin-top: 0px;
         margin-bottom: 0px;
         margin-left: 70px;
-        padding-top: 130px;
+        padding-top: 140px;
         text-indent: 30px;
+    }
+
+    .olivier2 {
+        margin-left: 180px;
     }
 
     .contact_p {
@@ -867,6 +907,11 @@ span {
         padding-top: 140px;
     }
 
+    .olivier2 {
+        margin-left: 150px;
+    }
+
+
     .contact_p {
         font-size: 15px;
     }
@@ -902,7 +947,15 @@ span {
 @media screen and (max-width: 330px) {
 
     .parchemin {
-        height: 820px;
+        height: 1000px;
+    }
+
+    .olivier {
+        padding-top: 150px;
+    }
+
+    .olivier2 {
+        margin-left: 150px;
     }
 }
 
