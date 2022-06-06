@@ -27,7 +27,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    max-height: 400px;
+    max-height: 450px;
 }
 
 /* Position premier plan */
@@ -35,15 +35,15 @@ header {
     position: relative;
     object-fit: fill;
     width: 100vw;
-    height: 400px;
+    height: 450px;
 }
 
-.presentation_contact {
+.presentation_contact2 {
     position: relative;
     object-fit: fill;
     width: 100vw;
-    height: 400px;
-    margin-top: -44px;
+    height: 506px;
+    margin-top: -56px;
 }
 
 /* position premier plan container */
@@ -428,7 +428,7 @@ span {
 }
   
 .carousel__face:nth-child(6) { 
-    background-image: url("./images/mentalisme.jpg");
+    background-image: url("./images/representation.jpg");
     transform: rotateY(200deg) translateZ(430px); 
 }
   
@@ -471,6 +471,18 @@ span {
 }
 
 @media screen and (min-width: 1600px) {
+    header {
+        max-height: 600px;
+    }
+    
+    .presentation {
+        height: 600px;
+    }
+
+    .presentation_contact2 {
+        height: 670px;
+        margin-top: -74px;
+    }
     
     .parchemin {
         height: 950px;
@@ -499,6 +511,19 @@ span {
         margin: 0;
         padding: 0;
     }  
+
+    header {
+        max-height: 400px;
+    }
+    
+    .presentation {
+        height: 400px;
+    }
+
+    .presentation_contact2 {
+        height: 455px;
+        margin-top: -55px;
+    }
 
       /* position premier plan container */
     .navigation {
